@@ -2,6 +2,8 @@
 pragma solidity ^0.8.13;
 import "solmate/utils/ReentrancyGuard.sol";
 import "./PulpLibrary.sol";
+import "./LoanAgreement.sol";
+import "./InterestRateCalculator.sol";
 
 contract Action is ReentrancyGuard {
     
@@ -17,7 +19,6 @@ contract Action is ReentrancyGuard {
         address payable lenderAddress = payable(_lenderAddress);
         (bool sent, ) = lenderAddress.call{value: amount}("");
         require(sent, "Transfer failed");
-        loanState = LoanState.Funded;
         emit Deposit(lenderAddress, address(this), amount, block.timestamp);
     }
 
@@ -25,7 +26,6 @@ contract Action is ReentrancyGuard {
         uint256 borrowAmount = loanAgreement.principalBorrowAmount;
         (bool sent, ) = lenderAddress.call{value: borrowAmount}("");
         require(sent, "Transfer failed");
-        loanState = LoanState.Agreed;
         emit Borrow(lenderAddress, borrowerAddress, borrowAmount, loanAgreement, block.timestamp);
     }
 
@@ -34,7 +34,7 @@ contract Action is ReentrancyGuard {
         uint256 accruedInterest = accrueInterest(repaymentAmount, lenderOffer.interestRate, loanAgreement);
         (bool sent, ) = borrowerAddress.call{value: repaymentAmount + accruedInterest}("");
         require(sent, "Transfer failed");
-        removeLoanAgreedment(lenderAddress);
+        removeLoanAgreement(lenderAddress);
         emit Repay(lenderAddress, borrowerAddress, repaymentAmount, loanAgreement, block.timestamp);
     }
 }

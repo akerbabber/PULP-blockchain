@@ -10,8 +10,8 @@ contract Match {
     // Verification public verification;
 
     /** Processes borrower data to verify against open loan offers requirements. Success creates loan agreement.
-    * @param address of borrower
-    * @param borrower data
+    * @param borrowerAddress of borrower
+    * @param borrowerData data
     */
     function startMatch(address borrowerAddress, PulpLibrary.Borrower memory borrowerData) public {
         LoanOffer.Offer[] memory allLoanOffers = loanOffer.getLoanOffers();
