@@ -3,12 +3,11 @@ pragma solidity ^0.8.13;
 import "./LoanOffer.sol";
 import "./PulpLibrary.sol";
 import "./LoanAgreement.sol";
-// import "CredentialsVerifier.sol";
+import "CredentialsVerifier.sol";
 
-contract Match is LoanAgreement {
+contract Match is LoanAgreement, CredentialsVerifier {
     using PulpLibrary for PulpLibrary.Borrower;
     LoanOffer public loanOffer;
-    // CredentialsVerifier public credentialVerifier;
 
     /** Processes borrower data to verify against open loan offers requirements. Success creates loan agreement.
     * @param borrowerAddress of borrower
@@ -18,7 +17,7 @@ contract Match is LoanAgreement {
         LoanOffer.Offer[] memory allLoanOffers = loanOffer.getLoanOffers();
         
         for(uint256 i = 0; i < allLoanOffers.length; i++){
-            if(Verification.verifyRequirements(borrowerAddress, allLoanOffers[i].ageThreshold, allLoanOffers[i].repThreshold)){
+            if(isEnabledToBorrowMock(1) && isEnabledToBorrowMock(4)){
                 createLoanAgreement(allLoanOffers[i].lenderData, borrowerData, allLoanOffers[i].loanOffer);
             }
         }
