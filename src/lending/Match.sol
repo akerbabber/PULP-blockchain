@@ -18,7 +18,7 @@ contract Match is LoanAgreement, CredentialsVerifier, Action {
     */
     function startMatch(address borrowerAddress, PulpLibrary.Borrower memory borrowerData) public {
         PulpLibrary.Offer[] memory allLoanOffers = loanOffer.getLoanOffers();
-        
+        require(allLoanOffers.length > 0, "No loan offers available");
         for(uint256 i = 0; i < allLoanOffers.length; i++){
             PulpLibrary.Offer memory currentOffer = allLoanOffers[i];
             if(isEnabledToBorrowMock(1) && isEnabledToBorrowMock(4)){
