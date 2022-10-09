@@ -32,9 +32,9 @@ contract Action is ReentrancyGuard, InterestRateCalculator, LoanAgreement {
     function repay(address borrowerAddress, address lenderAddress, PulpLibrary.Agreement memory loanAgreement) public payable nonReentrant{
         uint256 repaymentAmount = loanAgreement.currentRepaymentAmount;
         uint256 accruedInterest = uint256(accrueInterest(repaymentAmount, loanAgreement.interestRate, loanAgreement.repayByTimestamp));
+        removeLoanAgreement(lenderAddress);
         (bool sent, ) = borrowerAddress.call{value: repaymentAmount + accruedInterest}("");
         require(sent, "Transfer failed");
-        removeLoanAgreement(lenderAddress);
         emit Repay(lenderAddress, borrowerAddress, repaymentAmount, loanAgreement, block.timestamp);
     }
 }
