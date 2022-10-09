@@ -5,5 +5,5 @@ contract PulpCore {
     // change to use oracle for price settlement
     uint256 public constant MAX_LOAN_AMOUNT = 10000;
     uint256 public constant DEFAULT_INTEREST_RATE = 15;
-
+    uint256 public constant DEFAULT_EXPIRATION_TIMESPAN = 2629800; // 1 month in seconds
 }
