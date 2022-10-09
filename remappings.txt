@@ -2,3 +2,4 @@
 @openzeppelin/contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts
 solidity-bytes-utils/=lib/solidity-bytes-utils/
 forge-std=lib/forge-std/src/
+solmate/=lib/solmate/src/
