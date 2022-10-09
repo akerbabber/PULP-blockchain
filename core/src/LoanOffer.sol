@@ -1,25 +1,27 @@
-// SPDX-License-Identifier: UNLICENSED
+// SPDX-License-Identifier: MIT
 pragma solidity ^0.8.13;
+import "./Action.sol";
 
 contract LoanOffer {
     struct Offer {
         uint256 ageThreshold;
         uint256 reputationThreshold;
         uint256 loanOfferAmount;
+        address lender;
     }
 
     Offer[] public loanOffers;
 
-    function addLoanOffer() internal returns (Offer memory) {
-        // add all loan offers
+    function addLoanOffer(Offer storage _loanOffer) internal {
+        loanOffers.push(_loanOffer);
+        deposit(_loanOffer.lender, _loanOffer.loanOfferAmount);
     }
     
     function removeLoanOffer() external {
-        // done automatically by met requirements
-        // triggered by loan user
+        loanOffers.pop();
     }
 
     function getLoanOffers() external view returns (Offer[] memory){
-        // get all loan offers
+        return loanOffers;
     }
 }

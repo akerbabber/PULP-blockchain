@@ -1,7 +1,7 @@
-// SPDX-License-Identifier: UNLICENSED
+// SPDX-License-Identifier: MIT
 pragma solidity ^0.8.13;
+import "solmate/utils/ReentrancyGuard.sol";
 import "./PulpLibrary.sol";
-import "../../lib/solmate/src/utils/ReentrancyGuard";
 
 contract Action is ReentrancyGuard {
     
@@ -13,7 +13,7 @@ contract Action is ReentrancyGuard {
 
     receive() external payable {}
 
-    function deposit(address _lenderAddress, uint256 amount) external payable nonReentrant{
+    function deposit(address _lenderAddress, uint256 amount) internal payable nonReentrant{
         address payable lenderAddress = payable(_lenderAddress);
         (bool sent, ) = lenderAddress.call{value: amount}("");
         require(sent, "Transfer failed");
@@ -21,7 +21,7 @@ contract Action is ReentrancyGuard {
         emit Deposit(lenderAddress, address(this), amount, block.timestamp);
     }
 
-    function borrow(address borrowerAddress, address lenderAddress, PulpLibrary.Agreement memory loanAgreement) external payable nonReentrant{
+    function borrow(address borrowerAddress, address lenderAddress, PulpLibrary.Agreement memory loanAgreement) internal payable nonReentrant{
         uint256 borrowAmount = loanAgreement.principalBorrowAmount;
         (bool sent, ) = lenderAddress.call{value: borrowAmount}("");
         require(sent, "Transfer failed");
