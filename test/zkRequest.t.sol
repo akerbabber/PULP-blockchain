@@ -3,7 +3,7 @@ pragma solidity ^0.8.13;
 
 import "forge-std/Test.sol";
 import "forge-std/console.sol";
-import {ERC20Verifier} from "src/ERC20Verifier.sol";
+import {CredentialsVerifier} from "src/CredentialsVerifier.sol";
 import "../src/interfaces/ICircuitValidator.sol";
 
 contract zkRequestScript is Script {
@@ -28,24 +28,24 @@ contract zkRequestScript is Script {
     uint256 public constant incomeSchema = 320637089358724701904569884896386819229;
 
     uint64 public requestId;
-    ERC20Verifier verifier;
+    CredentialsVerifier verifier;
 
     function setUp() public {
-        verifier = new ERC20Verifier("asd","lol");
+        verifier = new CredentialsVerifier();
     }
 
     function test1() public {
         ICircuitValidator.CircuitQuery memory ageQuery;
 
-        ageQuery.schema = 11159900042574581856801525453324566470;
+        ageQuery.schema = ageSchema;
         ageQuery.slotIndex = 2;
         ageQuery.operator = 2;
         ageQuery.value = new uint256[](1);
-        ageQuery.value[0] = 90;
+        ageQuery.value[0] = 18;
         ageQuery.circuitId = circuitId;
         console.logAddress(address(verifier));
 
-        requestId = verifier.TRANSFER_REQUEST_ID();
+        requestId = verifier.AGE_CHECK_ID();
 
         verifier.setZKPRequest(
             requestId,
@@ -53,6 +53,8 @@ contract zkRequestScript is Script {
             ageQuery
         );
     }
+
+
     //  function setUp() public {}
     //
     //  function run() public {

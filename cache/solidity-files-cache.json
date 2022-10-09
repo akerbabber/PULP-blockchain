@@ -770,8 +770,8 @@
       }
     },
     "script/ERC20Verifier.s.sol": {
-      "lastModificationDate": 1665261988792,
-      "contentHash": "c2cedb9110b5b99f9fa87874b549ab1d",
+      "lastModificationDate": 1665295795389,
+      "contentHash": "4e4b3a8ad92368e1836d4ed79b1b7df8",
       "sourceName": "script/ERC20Verifier.s.sol",
       "solcConfig": {
         "settings": {
@@ -812,7 +812,7 @@
         "lib/openzeppelin-contracts/contracts/token/ERC20/extensions/IERC20Metadata.sol",
         "lib/openzeppelin-contracts/contracts/utils/Context.sol",
         "lib/solidity-bytes-utils/contracts/BytesLib.sol",
-        "src/ERC20Verifier.sol",
+        "src/CredentialsVerifier.sol",
         "src/interfaces/ICircuitValidator.sol",
         "src/interfaces/IZKPVerifier.sol",
         "src/lib/GenesisUtils.sol",
@@ -820,71 +820,15 @@
       ],
       "versionRequirement": "^0.8.13",
       "artifacts": {
-        "ERC20VerifierScript": {
-          "0.8.17+commit.8df45f5f.Darwin.appleclang": "ERC20Verifier.s.sol/ERC20VerifierScript.json"
+        "CredentialsVerifierScript": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "ERC20Verifier.s.sol/CredentialsVerifierScript.json"
         }
       }
     },
-    "script/zkRequestScript.s.sol": {
-      "lastModificationDate": 1665281662317,
-      "contentHash": "f8760a4bdb1cc2a77fc6c4b6c471da7e",
-      "sourceName": "script/zkRequestScript.s.sol",
-      "solcConfig": {
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "metadata": {
-            "bytecodeHash": "ipfs"
-          },
-          "outputSelection": {
-            "*": {
-              "": [
-                "ast"
-              ],
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ]
-            }
-          },
-          "evmVersion": "london",
-          "libraries": {}
-        }
-      },
-      "imports": [
-        "lib/forge-std/src/Script.sol",
-        "lib/forge-std/src/StdJson.sol",
-        "lib/forge-std/src/Vm.sol",
-        "lib/forge-std/src/console.sol",
-        "lib/forge-std/src/console2.sol",
-        "lib/openzeppelin-contracts/contracts/access/Ownable.sol",
-        "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol",
-        "lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol",
-        "lib/openzeppelin-contracts/contracts/token/ERC20/extensions/IERC20Metadata.sol",
-        "lib/openzeppelin-contracts/contracts/utils/Context.sol",
-        "lib/solidity-bytes-utils/contracts/BytesLib.sol",
-        "src/ERC20Verifier.sol",
-        "src/interfaces/ICircuitValidator.sol",
-        "src/interfaces/IZKPVerifier.sol",
-        "src/lib/GenesisUtils.sol",
-        "src/verifiers/ZKPVerifier.sol"
-      ],
-      "versionRequirement": "^0.8.13",
-      "artifacts": {
-        "zkRequestScript": {
-          "0.8.17+commit.8df45f5f.Darwin.appleclang": "zkRequestScript.s.sol/zkRequestScript.json"
-        }
-      }
-    },
-    "src/ERC20Verifier.sol": {
-      "lastModificationDate": 1665256639729,
-      "contentHash": "bac1ef22a968b02f90ba534363e8a1ec",
-      "sourceName": "src/ERC20Verifier.sol",
+    "src/CredentialsVerifier.sol": {
+      "lastModificationDate": 1665295809262,
+      "contentHash": "0602b6dfb344edd96e2d67ff9dd20a30",
+      "sourceName": "src/CredentialsVerifier.sol",
       "solcConfig": {
         "settings": {
           "optimizer": {
@@ -926,8 +870,8 @@
       ],
       "versionRequirement": "^0.8.0",
       "artifacts": {
-        "ERC20Verifier": {
-          "0.8.17+commit.8df45f5f.Darwin.appleclang": "ERC20Verifier.sol/ERC20Verifier.json"
+        "CredentialsVerifier": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "CredentialsVerifier.sol/CredentialsVerifier.json"
         }
       }
     },
@@ -1229,8 +1173,8 @@
       }
     },
     "test/zkRequest.t.sol": {
-      "lastModificationDate": 1665277786785,
-      "contentHash": "70ac96512df8db3b27490c030697c53d",
+      "lastModificationDate": 1665295553941,
+      "contentHash": "7005d511299008e3763a87a68f67657f",
       "sourceName": "test/zkRequest.t.sol",
       "solcConfig": {
         "settings": {
@@ -1273,7 +1217,7 @@
         "lib/openzeppelin-contracts/contracts/token/ERC20/extensions/IERC20Metadata.sol",
         "lib/openzeppelin-contracts/contracts/utils/Context.sol",
         "lib/solidity-bytes-utils/contracts/BytesLib.sol",
-        "src/ERC20Verifier.sol",
+        "src/CredentialsVerifier.sol",
         "src/interfaces/ICircuitValidator.sol",
         "src/interfaces/IZKPVerifier.sol",
         "src/lib/GenesisUtils.sol",

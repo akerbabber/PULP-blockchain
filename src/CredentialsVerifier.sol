@@ -44,7 +44,7 @@ contract CredentialsVerifier is  ZKPVerifier {
         ICircuitValidator validator
     ) internal override {
         require(
-            requestId == TRANSFER_REQUEST_ID && addressToId[_msgSender()] == 0,
+            isAValidRequestId(requestId) && addressToId[_msgSender()] == 0,
             "proof can not be submitted more than once"
         );
 
@@ -57,14 +57,19 @@ contract CredentialsVerifier is  ZKPVerifier {
     }
 
     function isEnabledToBorrow(
-        uint64 checkId
-    ) internal view override returns (bool){       
-            return proofs[msg.sender][checkId];
+        uint64 requestId
+    ) internal view returns (bool){       
+            return proofs[msg.sender][requestId];
     }
 
       function isEnabledToBorrowMock(
-        uint64 checkId
-    ) internal view override returns (bool){       
+        uint64 requestId
+    ) internal view returns (bool){       
             return true;
+    }
+
+    function isAValidRequestId(uint64 requestId) internal pure returns (bool) {
+        if(requestId<6 && requestId>=1) return true;
+        else return false;
     }
 }
