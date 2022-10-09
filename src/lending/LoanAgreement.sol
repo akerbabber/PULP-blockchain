@@ -27,6 +27,7 @@ contract LoanAgreement {
             borrowerAddress: borrower.borrower, 
             currentRepaymentAmount: lenderOffer.loanOfferAmount, 
             principalBorrowAmount: lenderOffer.loanOfferAmount, 
+            interestRate: lenderOffer.interestRate,
             repayByTimestamp: monthFromTimestamp, 
             createdDate: block.timestamp, 
             lenderData: lender, 

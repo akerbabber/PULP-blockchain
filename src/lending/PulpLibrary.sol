@@ -31,5 +31,6 @@ library PulpLibrary {
         uint256 reputationThreshold;
         uint256 loanOfferAmount;
         uint256 interestRate;
+        address lender;
     }
 }
