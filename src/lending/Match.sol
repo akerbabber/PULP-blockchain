@@ -22,8 +22,7 @@ contract Match is LoanAgreement, CredentialsVerifier {
             if(isEnabledToBorrowMock(1) && isEnabledToBorrowMock(4)){
 
                 PulpLibrary.Lender memory newLender = PulpLibrary.Lender({
-                    ageThreshold: currentOffer.ageThreshold,
-                    reputationThreshold: currentOffer.reputationThreshold,
+                    requirementIds: currentOffer.requirementIds,
                     lender: currentOffer.lender
                 });
 

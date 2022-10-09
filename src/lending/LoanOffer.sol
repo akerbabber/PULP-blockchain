@@ -2,6 +2,7 @@
 pragma solidity ^0.8.13;
 import "./Action.sol";
 import "./PulpLibrary.sol";
+
 contract LoanOffer is Action {
     using PulpLibrary for PulpLibrary.Offer;
 

@@ -3,14 +3,12 @@ pragma solidity ^0.8.13;
 
 library PulpLibrary {
    struct Lender {
-        uint256 ageThreshold;
-        uint256 reputationThreshold;
+        uint64[] requirementIds;
         address lender;
     }
 
     struct Borrower {
-        bool ageThresholdMet;
-        bool reputationThresholdMet;
+        bool requirementsMet;
         address borrower;
     }
 
@@ -27,8 +25,7 @@ library PulpLibrary {
     }
 
     struct Offer {
-        uint256 ageThreshold;
-        uint256 reputationThreshold;
+        uint64[] requirementIds;
         uint256 loanOfferAmount;
         uint256 interestRate;
         address lender;
