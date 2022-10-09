@@ -12,7 +12,7 @@ contract LoanOffer is Action {
 
     Offer[] public loanOffers;
 
-    function addLoanOffer(Offer storage _loanOffer) internal {
+    function addLoanOffer(Offer storage _loanOffer) public {
         loanOffers.push(_loanOffer);
         deposit(_loanOffer.lender, _loanOffer.loanOfferAmount);
     }
