@@ -19,7 +19,7 @@ contract LoanAgreement {
         _;
     }
 
-    function createLoanAgreement(PulpLibrary.Lender memory lender, PulpLibrary.Borrower memory borrower, PulpLibrary.Offer memory lenderOffer) public alreadyInAgreement(borrower.borrower, lender.lender){
+    function createLoanAgreement(PulpLibrary.Lender memory lender, PulpLibrary.Borrower memory borrower, PulpLibrary.Offer memory lenderOffer) public alreadyInAgreement(borrower.borrower, lender.lender) returns (PulpLibrary.Agreement memory) {
         uint256 monthFromTimestamp = block.timestamp + DEFAULT_EXPIRATION_TIMESPAN;
 
         PulpLibrary.Agreement memory newAgreement = PulpLibrary.Agreement({
@@ -35,7 +35,7 @@ contract LoanAgreement {
         });
 
         loanAgreements[lender.lender] = newAgreement;
-
+        return newAgreement;
     }
     function removeLoanAgreement(address lenderAddress) public {
         delete loanAgreements[lenderAddress];
