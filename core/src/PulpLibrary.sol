@@ -19,6 +19,7 @@ library PulpLibrary {
         address borrowerAddress;
         uint256 currentRepaymentAmount;
         uint256 principalBorrowAmount;
+        uint256 interestRate;
         uint256 repayByTimestamp;
         uint256 createdDate;
         Lender lenderData;

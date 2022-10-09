@@ -5,7 +5,7 @@ import "./PulpLibrary.sol";
 import "./LoanAgreement.sol";
 import "./InterestRateCalculator.sol";
 
-contract Action is ReentrancyGuard {
+contract Action is ReentrancyGuard, InterestRateCalculator, LoanAgreement {
     
     using PulpLibrary for PulpLibrary.Agreement;
 
@@ -31,7 +31,7 @@ contract Action is ReentrancyGuard {
 
     function repay(address borrowerAddress, address lenderAddress, PulpLibrary.Agreement memory loanAgreement) external payable nonReentrant{
         uint256 repaymentAmount = loanAgreement.currentRepaymentAmount;
-        uint256 accruedInterest = accrueInterest(repaymentAmount, lenderOffer.interestRate, loanAgreement);
+        uint256 accruedInterest = accrueInterest(repaymentAmount, loanAgreement.interestRate, loanAgreement.repayByTimestamp);
         (bool sent, ) = borrowerAddress.call{value: repaymentAmount + accruedInterest}("");
         require(sent, "Transfer failed");
         removeLoanAgreement(lenderAddress);

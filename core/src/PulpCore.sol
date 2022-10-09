@@ -1,12 +1,14 @@
-// SPDX-License-Identifier: UNLICENSED
+// SPDX-License-Identifier: MIT
 pragma solidity ^0.8.13;
 
 contract PulpCore {
-    // change to use oracle for price settlement
     uint256 public constant MAX_LOAN_AMOUNT = 10000;
     uint256 public constant DEFAULT_INTEREST_RATE = 15;
-    uint256 public constant DEFAULT_EXPIRATION_TIMESPAN = 2629800; // 1 month in seconds
 
-    enum State {Offered, Funded, Agreed}
-    State public loanState;
+    modifier moreThanMaxAmount(uint256 requestedLoanAmount){
+        require(requestedLoanAmount <= 10000, "Requested loan amount is greater than 10,000");
+        _;
+    }
+
+    constructor() {}
 }

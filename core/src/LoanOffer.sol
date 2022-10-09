@@ -2,7 +2,7 @@
 pragma solidity ^0.8.13;
 import "./Action.sol";
 
-contract LoanOffer {
+contract LoanOffer is Action {
     struct Offer {
         uint256 ageThreshold;
         uint256 reputationThreshold;
