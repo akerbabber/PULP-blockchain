@@ -13,7 +13,7 @@ contract PulpCore is LoanOffer, Match {
     uint256 public constant MAX_LOAN_AMOUNT = 10000;
     uint256 public constant DEFAULT_INTEREST_RATE = 15;
 
-    uint256[6] private requirementIds = [
+    uint64[6] private requirementIds = [
         1, // Age Check ID
         2, // Credit Check ID
         3, // GPA Check ID
@@ -29,7 +29,7 @@ contract PulpCore is LoanOffer, Match {
 
     constructor() {}
 
-    function initiateLender(uint64[] memory _requirementIds, uint256 _loanOfferAmount,uint256 _interestRate) public {
+    function initiateLender(uint64[] memory _requirementIds, uint256 _loanOfferAmount, uint256 _interestRate) public {
         address lenderAddress = msg.sender;
         PulpLibrary.Offer memory newLoanOffer = PulpLibrary.Offer({
             loanOfferAmount: _loanOfferAmount, 
@@ -43,7 +43,8 @@ contract PulpCore is LoanOffer, Match {
     function initiateBorrower() public {
         address borrowerAddress = msg.sender;
         PulpLibrary.Borrower memory newBorrower = PulpLibrary.Borrower({
-            borrower: borrowerAddress
+            borrower: borrowerAddress,
+            requirementsMet: false
         });
 
         startMatch(borrowerAddress, newBorrower);
