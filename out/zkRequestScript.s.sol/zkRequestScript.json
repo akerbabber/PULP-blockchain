@@ -1,0 +1,1680 @@
+{
+  "abi": [
+    {
+      "inputs": [],
+      "name": "IS_SCRIPT",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "circuitId",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "requestId",
+      "outputs": [
+        {
+          "internalType": "uint64",
+          "name": "",
+          "type": "uint64"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "run",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "validatorAddress",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "verifierAddress",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "vm",
+      "outputs": [
+        {
+          "internalType": "contract Vm",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x60806040526000805460ff1916600117905534801561001d57600080fd5b506105408061002d6000396000f3fe608060405234801561001057600080fd5b506004361061007c5760003560e01c80633a7684631161005b5780633a7684631461012f5780633fe4676e1461014a578063c040622614610165578063f8ccbf471461016f57600080fd5b80626d6cae14610081578063030c9d5c146100b857806318bdffbb146100fc575b600080fd5b60005461009a90610100900467ffffffffffffffff1681565b60405167ffffffffffffffff90911681526020015b60405180910390f35b6100ef6040518060400160405280601881526020017763726564656e7469616c41746f6d6963517565727953696760401b81525081565b6040516100af91906103dc565b610117735fbdb2315678afecb367f032d93f642f64180aa381565b6040516001600160a01b0390911681526020016100af565b610117737109709ecfa91a80626ff3989d68f67f5b1dd12d81565b61011773e7f1725e7734ce288f8367e1bb143e90bb3f051281565b61016d61018c565b005b60005461017c9060ff1681565b60405190151581526020016100af565b6000735fbdb2315678afecb367f032d93f642f64180aa390506101d76040518060a0016040528060008152602001600081526020016000815260200160608152602001606081525090565b6fe3c63b6eb7cc485a826ee63af1d2f917815260026020820181905260408083019190915280516001808252818301909252908160200160208202803683375050506060820181905280516301317b859190600090610238576102386103f6565b6020026020010181815250506040518060400160405280601881526020017763726564656e7469616c41746f6d6963517565727953696760401b8152508160800181905250816001600160a01b03166363ec508f6040518163ffffffff1660e01b8152600401602060405180830381865afa1580156102bb573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906102df919061040c565b6000805468ffffffffffffffff00191661010067ffffffffffffffff93841681029190911791829055604051637f7103f360e11b81526001600160a01b0386169363fee207e69361034e939004169073e7f1725e7734ce288f8367e1bb143e90bb3f0512908690600401610436565b6020604051808303816000875af115801561036d573d6000803e3d6000fd5b505050506040513d601f19601f8201168201806040525081019061039191906104e8565b505050565b6000815180845260005b818110156103bc576020818501810151868301820152016103a0565b506000602082860101526020601f19601f83011685010191505092915050565b6020815260006103ef6020830184610396565b9392505050565b634e487b7160e01b600052603260045260246000fd5b60006020828403121561041e57600080fd5b815167ffffffffffffffff811681146103ef57600080fd5b67ffffffffffffffff841681526000602060018060a01b0385168184015260606040840152610100830184516060850152818501516080850152604085015160a0850152606085015160a060c0860152818151808452610120870191508483019350600092505b808310156104bd578351825292840192600192909201919084019061049d565b506080870151868203605f190160e088015293506104db8185610396565b9998505050505050505050565b6000602082840312156104fa57600080fd5b815180151581146103ef57600080fdfea2646970667358221220fed6be56abe5567ae1d558a0342f3092e9823a6c58ada9e684756e5b1659fd7264736f6c63430008110033",
+    "sourceMap": "200:1201:11:-:0;;;170:28:0;;;-1:-1:-1;;170:28:0;194:4;170:28;;;200:1201:11;;;;;;;;;;;;;;;;",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x608060405234801561001057600080fd5b506004361061007c5760003560e01c80633a7684631161005b5780633a7684631461012f5780633fe4676e1461014a578063c040622614610165578063f8ccbf471461016f57600080fd5b80626d6cae14610081578063030c9d5c146100b857806318bdffbb146100fc575b600080fd5b60005461009a90610100900467ffffffffffffffff1681565b60405167ffffffffffffffff90911681526020015b60405180910390f35b6100ef6040518060400160405280601881526020017763726564656e7469616c41746f6d6963517565727953696760401b81525081565b6040516100af91906103dc565b610117735fbdb2315678afecb367f032d93f642f64180aa381565b6040516001600160a01b0390911681526020016100af565b610117737109709ecfa91a80626ff3989d68f67f5b1dd12d81565b61011773e7f1725e7734ce288f8367e1bb143e90bb3f051281565b61016d61018c565b005b60005461017c9060ff1681565b60405190151581526020016100af565b6000735fbdb2315678afecb367f032d93f642f64180aa390506101d76040518060a0016040528060008152602001600081526020016000815260200160608152602001606081525090565b6fe3c63b6eb7cc485a826ee63af1d2f917815260026020820181905260408083019190915280516001808252818301909252908160200160208202803683375050506060820181905280516301317b859190600090610238576102386103f6565b6020026020010181815250506040518060400160405280601881526020017763726564656e7469616c41746f6d6963517565727953696760401b8152508160800181905250816001600160a01b03166363ec508f6040518163ffffffff1660e01b8152600401602060405180830381865afa1580156102bb573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906102df919061040c565b6000805468ffffffffffffffff00191661010067ffffffffffffffff93841681029190911791829055604051637f7103f360e11b81526001600160a01b0386169363fee207e69361034e939004169073e7f1725e7734ce288f8367e1bb143e90bb3f0512908690600401610436565b6020604051808303816000875af115801561036d573d6000803e3d6000fd5b505050506040513d601f19601f8201168201806040525081019061039191906104e8565b505050565b6000815180845260005b818110156103bc576020818501810151868301820152016103a0565b506000602082860101526020601f19601f83011685010191505092915050565b6020815260006103ef6020830184610396565b9392505050565b634e487b7160e01b600052603260045260246000fd5b60006020828403121561041e57600080fd5b815167ffffffffffffffff811681146103ef57600080fd5b67ffffffffffffffff841681526000602060018060a01b0385168184015260606040840152610100830184516060850152818501516080850152604085015160a0850152606085015160a060c0860152818151808452610120870191508483019350600092505b808310156104bd578351825292840192600192909201919084019061049d565b506080870151868203605f190160e088015293506104db8185610396565b9998505050505050505050565b6000602082840312156104fa57600080fd5b815180151581146103ef57600080fdfea2646970667358221220fed6be56abe5567ae1d558a0342f3092e9823a6c58ada9e684756e5b1659fd7264736f6c63430008110033",
+    "sourceMap": "200:1201:11:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;665:23;;;;;;;;;;;;;;;188:18:17;176:31;;;158:50;;146:2;131:18;665:23:11;;;;;;;;241:61;;;;;;;;;;;;;;;-1:-1:-1;;;241:61:11;;;;;;;;;;;;:::i;407:92::-;;457:42;407:92;;;;;-1:-1:-1;;;;;1036:32:17;;;1018:51;;1006:2;991:18;407:92:11;872:203:17;321:38:0;;250:64;321:38;;308:93:11;;359:42;308:93;;695:545;;;:::i;:::-;;170:28:0;;;;;;;;;;;;1464:14:17;;1457:22;1439:41;;1427:2;1412:18;170:28:0;1299:187:17;695:545:11;727:22;457:42;727:55;;793:46;-1:-1:-1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;793:46:11;868:39;850:57;;938:1;917:18;;;:22;;;949:17;;;;:21;;;;998:13;;1009:1;998:13;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;;980:14:11;;;:31;;;1021:17;;1041:8;;980:31;1036:1;;1021:17;;;;:::i;:::-;;;;;;:28;;;;;1080:9;;;;;;;;;;;;;-1:-1:-1;;;1080:9:11;;;1059:8;:18;;:30;;;;1112:8;-1:-1:-1;;;;;1112:28:11;;:30;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;1100:9;:42;;-1:-1:-1;;1100:42:11;;;;;;;;;;;;;;;;1153:80;;-1:-1:-1;;;1153:80:11;;-1:-1:-1;;;;;1153:22:11;;;;;:80;;1176:9;;;;359:42;;1224:8;;1153:80;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;717:523;;695:545::o;219:423:17:-;261:3;299:5;293:12;326:6;321:3;314:19;351:1;361:162;375:6;372:1;369:13;361:162;;;437:4;493:13;;;489:22;;483:29;465:11;;;461:20;;454:59;390:12;361:162;;;365:3;568:1;561:4;552:6;547:3;543:16;539:27;532:38;631:4;624:2;620:7;615:2;607:6;603:15;599:29;594:3;590:39;586:50;579:57;;;219:423;;;;:::o;647:220::-;796:2;785:9;778:21;759:4;816:45;857:2;846:9;842:18;834:6;816:45;:::i;:::-;808:53;647:220;-1:-1:-1;;;647:220:17:o;1623:127::-;1684:10;1679:3;1675:20;1672:1;1665:31;1715:4;1712:1;1705:15;1739:4;1736:1;1729:15;1755:288;1824:6;1877:2;1865:9;1856:7;1852:23;1848:32;1845:52;;;1893:1;1890;1883:12;1845:52;1925:9;1919:16;1975:18;1968:5;1964:30;1957:5;1954:41;1944:69;;2009:1;2006;1999:12;2048:1300;2332:18;2324:6;2320:31;2309:9;2302:50;2283:4;2371:2;2438:1;2434;2429:3;2425:11;2421:19;2413:6;2409:32;2404:2;2393:9;2389:18;2382:60;2478:2;2473;2462:9;2458:18;2451:30;2519:3;2508:9;2504:19;2565:6;2559:13;2554:2;2543:9;2539:18;2532:41;2628:2;2620:6;2616:15;2610:22;2604:3;2593:9;2589:19;2582:51;2689:2;2681:6;2677:15;2671:22;2664:4;2653:9;2649:20;2642:52;2741:2;2733:6;2729:15;2723:22;2782:4;2776:3;2765:9;2761:19;2754:33;2807:6;2842:12;2836:19;2879:6;2871;2864:22;2917:3;2906:9;2902:19;2895:26;;2962:2;2948:12;2944:21;2930:35;;2983:1;2974:10;;2993:169;3007:6;3004:1;3001:13;2993:169;;;3068:13;;3056:26;;3137:15;;;;3029:1;3022:9;;;;;3102:12;;;;2993:169;;;-1:-1:-1;3211:3:17;3199:16;;3193:23;3257:19;;;-1:-1:-1;;3253:33:17;3247:3;3232:19;;3225:62;3193:23;-1:-1:-1;3304:38:17;3261:3;3193:23;3304:38;:::i;:::-;3296:46;2048:1300;-1:-1:-1;;;;;;;;;2048:1300:17:o;3353:277::-;3420:6;3473:2;3461:9;3452:7;3448:23;3444:32;3441:52;;;3489:1;3486;3479:12;3441:52;3521:9;3515:16;3574:5;3567:13;3560:21;3553:5;3550:32;3540:60;;3596:1;3593;3586:12",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "IS_SCRIPT()": "f8ccbf47",
+    "circuitId()": "030c9d5c",
+    "requestId()": "006d6cae",
+    "run()": "c0406226",
+    "validatorAddress()": "3fe4676e",
+    "verifierAddress()": "18bdffbb",
+    "vm()": "3a768463"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.17+commit.8df45f5f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"IS_SCRIPT\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"circuitId\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"requestId\",\"outputs\":[{\"internalType\":\"uint64\",\"name\":\"\",\"type\":\"uint64\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"run\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"validatorAddress\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"verifierAddress\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"vm\",\"outputs\":[{\"internalType\":\"contract Vm\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"script/zkRequestScript.s.sol\":\"zkRequestScript\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@openzeppelin/contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/\",\":@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/\",\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":forge-std/=lib/forge-std/src/\",\":openzeppelin-contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/\",\":openzeppelin-contracts/=lib/openzeppelin-contracts/contracts/\",\":solidity-bytes-utils/=lib/solidity-bytes-utils/\"]},\"sources\":{\"lib/forge-std/src/Script.sol\":{\"keccak256\":\"0x9d09c1e55cd508d3376cff9961625d51d73f8ce075ec1e9deed41408a4556e00\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://8880c5551daf337ab91665a9ce593df67a9eb11b0bee820f631d324d2fdd3a8b\",\"dweb:/ipfs/QmNpvSBGnS9Jr6Swd6XKsijG59a4yjYemWCFwprjKFkpNC\"]},\"lib/forge-std/src/StdJson.sol\":{\"keccak256\":\"0x1297a1cc393bc8163ccf143e5335536e78cb25ac24a4f6dfdb25f5746dd4827e\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://945ccffad9fc09d2aa0ac200a80dcfa2f491dba8680fc9c3d3d450d891284b87\",\"dweb:/ipfs/QmYSfFb1L6LN1ZB9KWzZqxt2iAbpuFDskBcU1Bz4RiyuQ5\"]},\"lib/forge-std/src/Vm.sol\":{\"keccak256\":\"0x1a5767028a0c3985e991456fc9650055e28b01b787c56b11f66ac30498a153ab\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://f86887212eacca450a15a8a5bf9fe83fd91a2ba623df8e9c32c75a31824c8ea2\",\"dweb:/ipfs/QmTUHBNdZwntgjbFZne7fY9ZJLNGYWaq3uWfGk6FyqdAkB\"]},\"lib/forge-std/src/console.sol\":{\"keccak256\":\"0x91d5413c2434ca58fd278b6e1e79fd98d10c83931cc2596a6038eee4daeb34ba\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://91ccea707361e48b9b7a161fe81f496b9932bc471e9c4e4e1e9c283f2453cc70\",\"dweb:/ipfs/QmcB66sZhQ6Kz7MUHcLE78YXRUZxoZnnxZjN6yATsbB2ec\"]},\"lib/forge-std/src/console2.sol\":{\"keccak256\":\"0xbeb823fcdb356244a83aaccdf828ad019ecc1ffaa3dff18e624fc6d5714ea671\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://4cbe9400340e5f9ec55e2aff3bad1c15fa3afbbe37e80800e6f3fed2ad26854f\",\"dweb:/ipfs/QmdJBABsuXkvWxVzEyGXsTE3vyfBPXDdw5xvvtUz3JeoYW\"]},\"lib/openzeppelin-contracts/contracts/access/Ownable.sol\":{\"keccak256\":\"0xa94b34880e3c1b0b931662cb1c09e5dfa6662f31cba80e07c5ee71cd135c9673\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://40fb1b5102468f783961d0af743f91b9980cf66b50d1d12009f6bb1869cea4d2\",\"dweb:/ipfs/QmYqEbJML4jB1GHbzD4cUZDtJg5wVwNm3vDJq1GbyDus8y\"]},\"lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol\":{\"keccak256\":\"0x3270d2a7a042dda9cf85dddd16e6106c2c9ad784c0972315630b2a148215fa7d\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://b394e20d57877a825c24c1841e219d6ab1e41decec060ea935422ac9b7a25f8a\",\"dweb:/ipfs/QmVTaGCMR4Gi9w1LUVVcjEJHrHF2qcr1avFkLtsLD6sEAr\"]},\"lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol\":{\"keccak256\":\"0x9750c6b834f7b43000631af5cc30001c5f547b3ceb3635488f140f60e897ea6b\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://5a7d5b1ef5d8d5889ad2ed89d8619c09383b80b72ab226e0fe7bde1636481e34\",\"dweb:/ipfs/QmebXWgtEfumQGBdVeM6c71McLixYXQP5Bk6kKXuoY4Bmr\"]},\"lib/openzeppelin-contracts/contracts/token/ERC20/extensions/IERC20Metadata.sol\":{\"keccak256\":\"0x8de418a5503946cabe331f35fe242d3201a73f67f77aaeb7110acb1f30423aca\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://5a376d3dda2cb70536c0a45c208b29b34ac560c4cb4f513a42079f96ba47d2dd\",\"dweb:/ipfs/QmZQg6gn1sUpM8wHzwNvSnihumUCAhxD119MpXeKp8B9s8\"]},\"lib/openzeppelin-contracts/contracts/utils/Context.sol\":{\"keccak256\":\"0xe2e337e6dde9ef6b680e07338c493ebea1b5fd09b43424112868e9cc1706bca7\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://6df0ddf21ce9f58271bdfaa85cde98b200ef242a05a3f85c2bc10a8294800a92\",\"dweb:/ipfs/QmRK2Y5Yc6BK7tGKkgsgn3aJEQGi5aakeSPZvS65PV8Xp3\"]},\"lib/solidity-bytes-utils/contracts/BytesLib.sol\":{\"keccak256\":\"0xf75784dfc94ea43668eb195d5690a1dde1b6eda62017e73a3899721583821d29\",\"license\":\"Unlicense\",\"urls\":[\"bzz-raw://ca16cef8b94f3ac75d376489a668618f6c4595a906b939d674a883f4bf426014\",\"dweb:/ipfs/QmceGU7qhyFLSejaj6i4dEtMzXDCSF3aYDtW1UeKjXQaRn\"]},\"script/zkRequestScript.s.sol\":{\"keccak256\":\"0xf3e6fa76bae8e30c6d75a06a3ac495abde9f455d29c6247df90e99d3f727b27b\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://c052dbb31fbd41d0b7188e065c6d9632742759e8f0b43045cfe2be9c16cede4a\",\"dweb:/ipfs/QmNMHf8r9yXhuZgAU2i2nD3wSbjCeWzqnHqoxZMKrYyZux\"]},\"src/ERC20Verifier.sol\":{\"keccak256\":\"0x44f6e3c3f0b0941387dff4c2111d6b1a6b51a52986b19afbc9ac4cf69ad72a6f\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://c371c2da4dbf515ee4e53d594f44ab87d56674ba9a290c09e7d2e90e2cdd18c8\",\"dweb:/ipfs/Qmaf8phT6UMaDAGDqgYZ7fsdaxWry1xqobuexgxS8nRoVc\"]},\"src/interfaces/ICircuitValidator.sol\":{\"keccak256\":\"0x1189e1b8d853a8613390754bcb6c9447090d196b9efe96d0c9f98e598f416af3\",\"urls\":[\"bzz-raw://2b52cc3f07e43b7c327e61926febeceb382e0349ef51800b0f72f47adc96b075\",\"dweb:/ipfs/Qmdk7MWhqN5TSdwGnJUQg12a14gLVs8gzykEoMNo9XZit5\"]},\"src/interfaces/IZKPVerifier.sol\":{\"keccak256\":\"0x81432204b8ca593d352e062ecc500e732139dfe162e740dd3985b791fcdf0a7d\",\"urls\":[\"bzz-raw://866df75609ae2690d86768a91bee7c46a4d422f1f2dd24e379ecff20d53cdb87\",\"dweb:/ipfs/QmVF3XjH2DVJkBJhfV4KmyJsWrGUFuWxaVDk6ZaJCMMUSd\"]},\"src/lib/GenesisUtils.sol\":{\"keccak256\":\"0x067daa2a565d116798909a8421d4abd67695df39be18d340d4274172153e83ba\",\"license\":\"GPL-3.0\",\"urls\":[\"bzz-raw://6702fdc069a9fa9c33091aa912529f244ac6e56bb139f3c22c7c8e03b5944b32\",\"dweb:/ipfs/Qmf2czU4Zbpr5qJ8ab9iEEfFBrLuhWat3WPdjCeVuSMH1f\"]},\"src/verifiers/ZKPVerifier.sol\":{\"keccak256\":\"0xfc554f68a19023fa30c183f2d4eb70b95998c845ccbae44ba2d4e7aebc5c3f06\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://fa1a7422f5a19da4ddbd916d08800c8c51eeb9cf85fd1ce8450c9555ed9395d9\",\"dweb:/ipfs/QmUMUp7ypQeEMCogJq3tEn3TJ1m9CRw8W6cyGAHLUJMAeg\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.17+commit.8df45f5f"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "IS_SCRIPT",
+          "outputs": [
+            {
+              "internalType": "bool",
+              "name": "",
+              "type": "bool"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "circuitId",
+          "outputs": [
+            {
+              "internalType": "string",
+              "name": "",
+              "type": "string"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "requestId",
+          "outputs": [
+            {
+              "internalType": "uint64",
+              "name": "",
+              "type": "uint64"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "run"
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "validatorAddress",
+          "outputs": [
+            {
+              "internalType": "address",
+              "name": "",
+              "type": "address"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "verifierAddress",
+          "outputs": [
+            {
+              "internalType": "address",
+              "name": "",
+              "type": "address"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "vm",
+          "outputs": [
+            {
+              "internalType": "contract Vm",
+              "name": "",
+              "type": "address"
+            }
+          ]
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":@openzeppelin/contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/",
+        ":@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/",
+        ":ds-test/=lib/forge-std/lib/ds-test/src/",
+        ":forge-std/=lib/forge-std/src/",
+        ":openzeppelin-contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/",
+        ":openzeppelin-contracts/=lib/openzeppelin-contracts/contracts/",
+        ":solidity-bytes-utils/=lib/solidity-bytes-utils/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "script/zkRequestScript.s.sol": "zkRequestScript"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "lib/forge-std/src/Script.sol": {
+        "keccak256": "0x9d09c1e55cd508d3376cff9961625d51d73f8ce075ec1e9deed41408a4556e00",
+        "urls": [
+          "bzz-raw://8880c5551daf337ab91665a9ce593df67a9eb11b0bee820f631d324d2fdd3a8b",
+          "dweb:/ipfs/QmNpvSBGnS9Jr6Swd6XKsijG59a4yjYemWCFwprjKFkpNC"
+        ],
+        "license": "MIT"
+      },
+      "lib/forge-std/src/StdJson.sol": {
+        "keccak256": "0x1297a1cc393bc8163ccf143e5335536e78cb25ac24a4f6dfdb25f5746dd4827e",
+        "urls": [
+          "bzz-raw://945ccffad9fc09d2aa0ac200a80dcfa2f491dba8680fc9c3d3d450d891284b87",
+          "dweb:/ipfs/QmYSfFb1L6LN1ZB9KWzZqxt2iAbpuFDskBcU1Bz4RiyuQ5"
+        ],
+        "license": "MIT"
+      },
+      "lib/forge-std/src/Vm.sol": {
+        "keccak256": "0x1a5767028a0c3985e991456fc9650055e28b01b787c56b11f66ac30498a153ab",
+        "urls": [
+          "bzz-raw://f86887212eacca450a15a8a5bf9fe83fd91a2ba623df8e9c32c75a31824c8ea2",
+          "dweb:/ipfs/QmTUHBNdZwntgjbFZne7fY9ZJLNGYWaq3uWfGk6FyqdAkB"
+        ],
+        "license": "MIT"
+      },
+      "lib/forge-std/src/console.sol": {
+        "keccak256": "0x91d5413c2434ca58fd278b6e1e79fd98d10c83931cc2596a6038eee4daeb34ba",
+        "urls": [
+          "bzz-raw://91ccea707361e48b9b7a161fe81f496b9932bc471e9c4e4e1e9c283f2453cc70",
+          "dweb:/ipfs/QmcB66sZhQ6Kz7MUHcLE78YXRUZxoZnnxZjN6yATsbB2ec"
+        ],
+        "license": "MIT"
+      },
+      "lib/forge-std/src/console2.sol": {
+        "keccak256": "0xbeb823fcdb356244a83aaccdf828ad019ecc1ffaa3dff18e624fc6d5714ea671",
+        "urls": [
+          "bzz-raw://4cbe9400340e5f9ec55e2aff3bad1c15fa3afbbe37e80800e6f3fed2ad26854f",
+          "dweb:/ipfs/QmdJBABsuXkvWxVzEyGXsTE3vyfBPXDdw5xvvtUz3JeoYW"
+        ],
+        "license": "MIT"
+      },
+      "lib/openzeppelin-contracts/contracts/access/Ownable.sol": {
+        "keccak256": "0xa94b34880e3c1b0b931662cb1c09e5dfa6662f31cba80e07c5ee71cd135c9673",
+        "urls": [
+          "bzz-raw://40fb1b5102468f783961d0af743f91b9980cf66b50d1d12009f6bb1869cea4d2",
+          "dweb:/ipfs/QmYqEbJML4jB1GHbzD4cUZDtJg5wVwNm3vDJq1GbyDus8y"
+        ],
+        "license": "MIT"
+      },
+      "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol": {
+        "keccak256": "0x3270d2a7a042dda9cf85dddd16e6106c2c9ad784c0972315630b2a148215fa7d",
+        "urls": [
+          "bzz-raw://b394e20d57877a825c24c1841e219d6ab1e41decec060ea935422ac9b7a25f8a",
+          "dweb:/ipfs/QmVTaGCMR4Gi9w1LUVVcjEJHrHF2qcr1avFkLtsLD6sEAr"
+        ],
+        "license": "MIT"
+      },
+      "lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol": {
+        "keccak256": "0x9750c6b834f7b43000631af5cc30001c5f547b3ceb3635488f140f60e897ea6b",
+        "urls": [
+          "bzz-raw://5a7d5b1ef5d8d5889ad2ed89d8619c09383b80b72ab226e0fe7bde1636481e34",
+          "dweb:/ipfs/QmebXWgtEfumQGBdVeM6c71McLixYXQP5Bk6kKXuoY4Bmr"
+        ],
+        "license": "MIT"
+      },
+      "lib/openzeppelin-contracts/contracts/token/ERC20/extensions/IERC20Metadata.sol": {
+        "keccak256": "0x8de418a5503946cabe331f35fe242d3201a73f67f77aaeb7110acb1f30423aca",
+        "urls": [
+          "bzz-raw://5a376d3dda2cb70536c0a45c208b29b34ac560c4cb4f513a42079f96ba47d2dd",
+          "dweb:/ipfs/QmZQg6gn1sUpM8wHzwNvSnihumUCAhxD119MpXeKp8B9s8"
+        ],
+        "license": "MIT"
+      },
+      "lib/openzeppelin-contracts/contracts/utils/Context.sol": {
+        "keccak256": "0xe2e337e6dde9ef6b680e07338c493ebea1b5fd09b43424112868e9cc1706bca7",
+        "urls": [
+          "bzz-raw://6df0ddf21ce9f58271bdfaa85cde98b200ef242a05a3f85c2bc10a8294800a92",
+          "dweb:/ipfs/QmRK2Y5Yc6BK7tGKkgsgn3aJEQGi5aakeSPZvS65PV8Xp3"
+        ],
+        "license": "MIT"
+      },
+      "lib/solidity-bytes-utils/contracts/BytesLib.sol": {
+        "keccak256": "0xf75784dfc94ea43668eb195d5690a1dde1b6eda62017e73a3899721583821d29",
+        "urls": [
+          "bzz-raw://ca16cef8b94f3ac75d376489a668618f6c4595a906b939d674a883f4bf426014",
+          "dweb:/ipfs/QmceGU7qhyFLSejaj6i4dEtMzXDCSF3aYDtW1UeKjXQaRn"
+        ],
+        "license": "Unlicense"
+      },
+      "script/zkRequestScript.s.sol": {
+        "keccak256": "0xf3e6fa76bae8e30c6d75a06a3ac495abde9f455d29c6247df90e99d3f727b27b",
+        "urls": [
+          "bzz-raw://c052dbb31fbd41d0b7188e065c6d9632742759e8f0b43045cfe2be9c16cede4a",
+          "dweb:/ipfs/QmNMHf8r9yXhuZgAU2i2nD3wSbjCeWzqnHqoxZMKrYyZux"
+        ],
+        "license": "UNLICENSED"
+      },
+      "src/ERC20Verifier.sol": {
+        "keccak256": "0x44f6e3c3f0b0941387dff4c2111d6b1a6b51a52986b19afbc9ac4cf69ad72a6f",
+        "urls": [
+          "bzz-raw://c371c2da4dbf515ee4e53d594f44ab87d56674ba9a290c09e7d2e90e2cdd18c8",
+          "dweb:/ipfs/Qmaf8phT6UMaDAGDqgYZ7fsdaxWry1xqobuexgxS8nRoVc"
+        ],
+        "license": "MIT"
+      },
+      "src/interfaces/ICircuitValidator.sol": {
+        "keccak256": "0x1189e1b8d853a8613390754bcb6c9447090d196b9efe96d0c9f98e598f416af3",
+        "urls": [
+          "bzz-raw://2b52cc3f07e43b7c327e61926febeceb382e0349ef51800b0f72f47adc96b075",
+          "dweb:/ipfs/Qmdk7MWhqN5TSdwGnJUQg12a14gLVs8gzykEoMNo9XZit5"
+        ],
+        "license": null
+      },
+      "src/interfaces/IZKPVerifier.sol": {
+        "keccak256": "0x81432204b8ca593d352e062ecc500e732139dfe162e740dd3985b791fcdf0a7d",
+        "urls": [
+          "bzz-raw://866df75609ae2690d86768a91bee7c46a4d422f1f2dd24e379ecff20d53cdb87",
+          "dweb:/ipfs/QmVF3XjH2DVJkBJhfV4KmyJsWrGUFuWxaVDk6ZaJCMMUSd"
+        ],
+        "license": null
+      },
+      "src/lib/GenesisUtils.sol": {
+        "keccak256": "0x067daa2a565d116798909a8421d4abd67695df39be18d340d4274172153e83ba",
+        "urls": [
+          "bzz-raw://6702fdc069a9fa9c33091aa912529f244ac6e56bb139f3c22c7c8e03b5944b32",
+          "dweb:/ipfs/Qmf2czU4Zbpr5qJ8ab9iEEfFBrLuhWat3WPdjCeVuSMH1f"
+        ],
+        "license": "GPL-3.0"
+      },
+      "src/verifiers/ZKPVerifier.sol": {
+        "keccak256": "0xfc554f68a19023fa30c183f2d4eb70b95998c845ccbae44ba2d4e7aebc5c3f06",
+        "urls": [
+          "bzz-raw://fa1a7422f5a19da4ddbd916d08800c8c51eeb9cf85fd1ce8450c9555ed9395d9",
+          "dweb:/ipfs/QmUMUp7ypQeEMCogJq3tEn3TJ1m9CRw8W6cyGAHLUJMAeg"
+        ],
+        "license": "MIT"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "script/zkRequestScript.s.sol",
+    "id": 18796,
+    "exportedSymbols": {
+      "ERC20Verifier": [
+        18961
+      ],
+      "ICircuitValidator": [
+        19016
+      ],
+      "Script": [
+        262
+      ],
+      "Vm": [
+        1402
+      ],
+      "console": [
+        9466
+      ],
+      "console2": [
+        17530
+      ],
+      "stdJson": [
+        622
+      ],
+      "zkRequestScript": [
+        18795
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "39:1363:11",
+    "nodes": [
+      {
+        "id": 18690,
+        "nodeType": "PragmaDirective",
+        "src": "39:24:11",
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".13"
+        ]
+      },
+      {
+        "id": 18691,
+        "nodeType": "ImportDirective",
+        "src": "65:30:11",
+        "absolutePath": "lib/forge-std/src/Script.sol",
+        "file": "forge-std/Script.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 18796,
+        "sourceUnit": 263,
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "id": 18693,
+        "nodeType": "ImportDirective",
+        "src": "96:52:11",
+        "absolutePath": "src/ERC20Verifier.sol",
+        "file": "src/ERC20Verifier.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 18796,
+        "sourceUnit": 18962,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 18692,
+              "name": "ERC20Verifier",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 18961,
+              "src": "104:13:11",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 18694,
+        "nodeType": "ImportDirective",
+        "src": "149:49:11",
+        "absolutePath": "src/interfaces/ICircuitValidator.sol",
+        "file": "../src/interfaces/ICircuitValidator.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 18796,
+        "sourceUnit": 19017,
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "id": 18795,
+        "nodeType": "ContractDefinition",
+        "src": "200:1201:11",
+        "nodes": [
+          {
+            "id": 18699,
+            "nodeType": "VariableDeclaration",
+            "src": "241:61:11",
+            "constant": true,
+            "functionSelector": "030c9d5c",
+            "mutability": "constant",
+            "name": "circuitId",
+            "nameLocation": "264:9:11",
+            "scope": 18795,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_memory_ptr",
+              "typeString": "string"
+            },
+            "typeName": {
+              "id": 18697,
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "241:6:11",
+              "typeDescriptions": {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              }
+            },
+            "value": {
+              "hexValue": "63726564656e7469616c41746f6d69635175657279536967",
+              "id": 18698,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "string",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "276:26:11",
+              "typeDescriptions": {
+                "typeIdentifier": "t_stringliteral_9983eb5a5aa10508427bcb16abc01d3926dafa58e5db1e818b29cb3ffcef0d04",
+                "typeString": "literal_string \"credentialAtomicQuerySig\""
+              },
+              "value": "credentialAtomicQuerySig"
+            },
+            "visibility": "public"
+          },
+          {
+            "id": 18702,
+            "nodeType": "VariableDeclaration",
+            "src": "308:93:11",
+            "constant": true,
+            "functionSelector": "3fe4676e",
+            "mutability": "constant",
+            "name": "validatorAddress",
+            "nameLocation": "332:16:11",
+            "scope": 18795,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 18700,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "308:7:11",
+              "stateMutability": "nonpayable",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "value": {
+              "hexValue": "307865376631373235453737333443453238384638333637653142623134334539306262334630353132",
+              "id": 18701,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "359:42:11",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              },
+              "value": "0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512"
+            },
+            "visibility": "public"
+          },
+          {
+            "id": 18705,
+            "nodeType": "VariableDeclaration",
+            "src": "407:92:11",
+            "constant": true,
+            "functionSelector": "18bdffbb",
+            "mutability": "constant",
+            "name": "verifierAddress",
+            "nameLocation": "431:15:11",
+            "scope": 18795,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 18703,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "407:7:11",
+              "stateMutability": "nonpayable",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "value": {
+              "hexValue": "307835466244423233313536373861666563623336376630333264393346363432663634313830616133",
+              "id": 18704,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "457:42:11",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              },
+              "value": "0x5FbDB2315678afecb367f032d93F642f64180aa3"
+            },
+            "visibility": "public"
+          },
+          {
+            "id": 18717,
+            "nodeType": "StructDefinition",
+            "src": "505:155:11",
+            "canonicalName": "zkRequestScript.CircuitQuery",
+            "members": [
+              {
+                "constant": false,
+                "id": 18707,
+                "mutability": "mutable",
+                "name": "schema",
+                "nameLocation": "543:6:11",
+                "nodeType": "VariableDeclaration",
+                "scope": 18717,
+                "src": "535:14:11",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 18706,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "535:7:11",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 18709,
+                "mutability": "mutable",
+                "name": "slotIndex",
+                "nameLocation": "567:9:11",
+                "nodeType": "VariableDeclaration",
+                "scope": 18717,
+                "src": "559:17:11",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 18708,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "559:7:11",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 18711,
+                "mutability": "mutable",
+                "name": "operator",
+                "nameLocation": "594:8:11",
+                "nodeType": "VariableDeclaration",
+                "scope": 18717,
+                "src": "586:16:11",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 18710,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "586:7:11",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 18714,
+                "mutability": "mutable",
+                "name": "value",
+                "nameLocation": "622:5:11",
+                "nodeType": "VariableDeclaration",
+                "scope": 18717,
+                "src": "612:15:11",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_array$_t_uint256_$dyn_storage_ptr",
+                  "typeString": "uint256[]"
+                },
+                "typeName": {
+                  "baseType": {
+                    "id": 18712,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "612:7:11",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 18713,
+                  "nodeType": "ArrayTypeName",
+                  "src": "612:9:11",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_uint256_$dyn_storage_ptr",
+                    "typeString": "uint256[]"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 18716,
+                "mutability": "mutable",
+                "name": "circuitId",
+                "nameLocation": "644:9:11",
+                "nodeType": "VariableDeclaration",
+                "scope": 18717,
+                "src": "637:16:11",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 18715,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "637:6:11",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "name": "CircuitQuery",
+            "nameLocation": "512:12:11",
+            "scope": 18795,
+            "visibility": "public"
+          },
+          {
+            "id": 18719,
+            "nodeType": "VariableDeclaration",
+            "src": "665:23:11",
+            "constant": false,
+            "functionSelector": "006d6cae",
+            "mutability": "mutable",
+            "name": "requestId",
+            "nameLocation": "679:9:11",
+            "scope": 18795,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint64",
+              "typeString": "uint64"
+            },
+            "typeName": {
+              "id": 18718,
+              "name": "uint64",
+              "nodeType": "ElementaryTypeName",
+              "src": "665:6:11",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint64",
+                "typeString": "uint64"
+              }
+            },
+            "visibility": "public"
+          },
+          {
+            "id": 18794,
+            "nodeType": "FunctionDefinition",
+            "src": "695:545:11",
+            "body": {
+              "id": 18793,
+              "nodeType": "Block",
+              "src": "717:523:11",
+              "statements": [
+                {
+                  "assignments": [
+                    18724
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 18724,
+                      "mutability": "mutable",
+                      "name": "verifier",
+                      "nameLocation": "741:8:11",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 18793,
+                      "src": "727:22:11",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_ERC20Verifier_$18961",
+                        "typeString": "contract ERC20Verifier"
+                      },
+                      "typeName": {
+                        "id": 18723,
+                        "nodeType": "UserDefinedTypeName",
+                        "pathNode": {
+                          "id": 18722,
+                          "name": "ERC20Verifier",
+                          "nameLocations": [
+                            "727:13:11"
+                          ],
+                          "nodeType": "IdentifierPath",
+                          "referencedDeclaration": 18961,
+                          "src": "727:13:11"
+                        },
+                        "referencedDeclaration": 18961,
+                        "src": "727:13:11",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_ERC20Verifier_$18961",
+                          "typeString": "contract ERC20Verifier"
+                        }
+                      },
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 18728,
+                  "initialValue": {
+                    "arguments": [
+                      {
+                        "id": 18726,
+                        "name": "verifierAddress",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 18705,
+                        "src": "766:15:11",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      ],
+                      "id": 18725,
+                      "name": "ERC20Verifier",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 18961,
+                      "src": "752:13:11",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_type$_t_contract$_ERC20Verifier_$18961_$",
+                        "typeString": "type(contract ERC20Verifier)"
+                      }
+                    },
+                    "id": 18727,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "kind": "typeConversion",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "752:30:11",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_ERC20Verifier_$18961",
+                      "typeString": "contract ERC20Verifier"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "727:55:11"
+                },
+                {
+                  "assignments": [
+                    18733
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 18733,
+                      "mutability": "mutable",
+                      "name": "ageQuery",
+                      "nameLocation": "831:8:11",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 18793,
+                      "src": "793:46:11",
+                      "stateVariable": false,
+                      "storageLocation": "memory",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_CircuitQuery_$18975_memory_ptr",
+                        "typeString": "struct ICircuitValidator.CircuitQuery"
+                      },
+                      "typeName": {
+                        "id": 18732,
+                        "nodeType": "UserDefinedTypeName",
+                        "pathNode": {
+                          "id": 18731,
+                          "name": "ICircuitValidator.CircuitQuery",
+                          "nameLocations": [
+                            "793:17:11",
+                            "811:12:11"
+                          ],
+                          "nodeType": "IdentifierPath",
+                          "referencedDeclaration": 18975,
+                          "src": "793:30:11"
+                        },
+                        "referencedDeclaration": 18975,
+                        "src": "793:30:11",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_CircuitQuery_$18975_storage_ptr",
+                          "typeString": "struct ICircuitValidator.CircuitQuery"
+                        }
+                      },
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 18734,
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "793:46:11"
+                },
+                {
+                  "expression": {
+                    "id": 18739,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "expression": {
+                        "id": 18735,
+                        "name": "ageQuery",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 18733,
+                        "src": "850:8:11",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_CircuitQuery_$18975_memory_ptr",
+                          "typeString": "struct ICircuitValidator.CircuitQuery memory"
+                        }
+                      },
+                      "id": 18737,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberLocation": "859:6:11",
+                      "memberName": "schema",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 18965,
+                      "src": "850:15:11",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "hexValue": "333032373634303335323535333133303130333831373435333536393234323832363635323339",
+                      "id": 18738,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "868:39:11",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_302764035255313010381745356924282665239_by_1",
+                        "typeString": "int_const 3027...(31 digits omitted)...5239"
+                      },
+                      "value": "302764035255313010381745356924282665239"
+                    },
+                    "src": "850:57:11",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 18740,
+                  "nodeType": "ExpressionStatement",
+                  "src": "850:57:11"
+                },
+                {
+                  "expression": {
+                    "id": 18745,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "expression": {
+                        "id": 18741,
+                        "name": "ageQuery",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 18733,
+                        "src": "917:8:11",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_CircuitQuery_$18975_memory_ptr",
+                          "typeString": "struct ICircuitValidator.CircuitQuery memory"
+                        }
+                      },
+                      "id": 18743,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberLocation": "926:9:11",
+                      "memberName": "slotIndex",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 18967,
+                      "src": "917:18:11",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "hexValue": "32",
+                      "id": 18744,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "938:1:11",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_2_by_1",
+                        "typeString": "int_const 2"
+                      },
+                      "value": "2"
+                    },
+                    "src": "917:22:11",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 18746,
+                  "nodeType": "ExpressionStatement",
+                  "src": "917:22:11"
+                },
+                {
+                  "expression": {
+                    "id": 18751,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "expression": {
+                        "id": 18747,
+                        "name": "ageQuery",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 18733,
+                        "src": "949:8:11",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_CircuitQuery_$18975_memory_ptr",
+                          "typeString": "struct ICircuitValidator.CircuitQuery memory"
+                        }
+                      },
+                      "id": 18749,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberLocation": "958:8:11",
+                      "memberName": "operator",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 18969,
+                      "src": "949:17:11",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "hexValue": "32",
+                      "id": 18750,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "969:1:11",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_2_by_1",
+                        "typeString": "int_const 2"
+                      },
+                      "value": "2"
+                    },
+                    "src": "949:21:11",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 18752,
+                  "nodeType": "ExpressionStatement",
+                  "src": "949:21:11"
+                },
+                {
+                  "expression": {
+                    "id": 18761,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "expression": {
+                        "id": 18753,
+                        "name": "ageQuery",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 18733,
+                        "src": "980:8:11",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_CircuitQuery_$18975_memory_ptr",
+                          "typeString": "struct ICircuitValidator.CircuitQuery memory"
+                        }
+                      },
+                      "id": 18755,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberLocation": "989:5:11",
+                      "memberName": "value",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 18972,
+                      "src": "980:14:11",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_array$_t_uint256_$dyn_memory_ptr",
+                        "typeString": "uint256[] memory"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "arguments": [
+                        {
+                          "hexValue": "31",
+                          "id": 18759,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "number",
+                          "lValueRequested": false,
+                          "nodeType": "Literal",
+                          "src": "1009:1:11",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_rational_1_by_1",
+                            "typeString": "int_const 1"
+                          },
+                          "value": "1"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_rational_1_by_1",
+                            "typeString": "int_const 1"
+                          }
+                        ],
+                        "id": 18758,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "lValueRequested": false,
+                        "nodeType": "NewExpression",
+                        "src": "998:10:11",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_function_objectcreation_pure$_t_uint256_$returns$_t_array$_t_uint256_$dyn_memory_ptr_$",
+                          "typeString": "function (uint256) pure returns (uint256[] memory)"
+                        },
+                        "typeName": {
+                          "baseType": {
+                            "id": 18756,
+                            "name": "uint",
+                            "nodeType": "ElementaryTypeName",
+                            "src": "1002:4:11",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          },
+                          "id": 18757,
+                          "nodeType": "ArrayTypeName",
+                          "src": "1002:6:11",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_array$_t_uint256_$dyn_storage_ptr",
+                            "typeString": "uint256[]"
+                          }
+                        }
+                      },
+                      "id": 18760,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "functionCall",
+                      "lValueRequested": false,
+                      "nameLocations": [],
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "998:13:11",
+                      "tryCall": false,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_array$_t_uint256_$dyn_memory_ptr",
+                        "typeString": "uint256[] memory"
+                      }
+                    },
+                    "src": "980:31:11",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_uint256_$dyn_memory_ptr",
+                      "typeString": "uint256[] memory"
+                    }
+                  },
+                  "id": 18762,
+                  "nodeType": "ExpressionStatement",
+                  "src": "980:31:11"
+                },
+                {
+                  "expression": {
+                    "id": 18769,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "baseExpression": {
+                        "expression": {
+                          "id": 18763,
+                          "name": "ageQuery",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 18733,
+                          "src": "1021:8:11",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_CircuitQuery_$18975_memory_ptr",
+                            "typeString": "struct ICircuitValidator.CircuitQuery memory"
+                          }
+                        },
+                        "id": 18766,
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberLocation": "1030:5:11",
+                        "memberName": "value",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 18972,
+                        "src": "1021:14:11",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_array$_t_uint256_$dyn_memory_ptr",
+                          "typeString": "uint256[] memory"
+                        }
+                      },
+                      "id": 18767,
+                      "indexExpression": {
+                        "hexValue": "30",
+                        "id": 18765,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "number",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "1036:1:11",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_rational_0_by_1",
+                          "typeString": "int_const 0"
+                        },
+                        "value": "0"
+                      },
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "nodeType": "IndexAccess",
+                      "src": "1021:17:11",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "hexValue": "3230303230313031",
+                      "id": 18768,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "1041:8:11",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_20020101_by_1",
+                        "typeString": "int_const 20020101"
+                      },
+                      "value": "20020101"
+                    },
+                    "src": "1021:28:11",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 18770,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1021:28:11"
+                },
+                {
+                  "expression": {
+                    "id": 18775,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "expression": {
+                        "id": 18771,
+                        "name": "ageQuery",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 18733,
+                        "src": "1059:8:11",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_CircuitQuery_$18975_memory_ptr",
+                          "typeString": "struct ICircuitValidator.CircuitQuery memory"
+                        }
+                      },
+                      "id": 18773,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberLocation": "1068:9:11",
+                      "memberName": "circuitId",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 18974,
+                      "src": "1059:18:11",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_memory_ptr",
+                        "typeString": "string memory"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "id": 18774,
+                      "name": "circuitId",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 18699,
+                      "src": "1080:9:11",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_memory_ptr",
+                        "typeString": "string memory"
+                      }
+                    },
+                    "src": "1059:30:11",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_memory_ptr",
+                      "typeString": "string memory"
+                    }
+                  },
+                  "id": 18776,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1059:30:11"
+                },
+                {
+                  "expression": {
+                    "id": 18781,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 18777,
+                      "name": "requestId",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 18719,
+                      "src": "1100:9:11",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint64",
+                        "typeString": "uint64"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "arguments": [],
+                      "expression": {
+                        "argumentTypes": [],
+                        "expression": {
+                          "id": 18778,
+                          "name": "verifier",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 18724,
+                          "src": "1112:8:11",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_contract$_ERC20Verifier_$18961",
+                            "typeString": "contract ERC20Verifier"
+                          }
+                        },
+                        "id": 18779,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "lValueRequested": false,
+                        "memberLocation": "1121:19:11",
+                        "memberName": "TRANSFER_REQUEST_ID",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 18808,
+                        "src": "1112:28:11",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_function_external_view$__$returns$_t_uint64_$",
+                          "typeString": "function () view external returns (uint64)"
+                        }
+                      },
+                      "id": 18780,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "functionCall",
+                      "lValueRequested": false,
+                      "nameLocations": [],
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "1112:30:11",
+                      "tryCall": false,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint64",
+                        "typeString": "uint64"
+                      }
+                    },
+                    "src": "1100:42:11",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint64",
+                      "typeString": "uint64"
+                    }
+                  },
+                  "id": 18782,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1100:42:11"
+                },
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "id": 18786,
+                        "name": "requestId",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 18719,
+                        "src": "1176:9:11",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint64",
+                          "typeString": "uint64"
+                        }
+                      },
+                      {
+                        "arguments": [
+                          {
+                            "id": 18788,
+                            "name": "validatorAddress",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 18702,
+                            "src": "1205:16:11",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_address",
+                              "typeString": "address"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_address",
+                              "typeString": "address"
+                            }
+                          ],
+                          "id": 18787,
+                          "name": "ICircuitValidator",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 19016,
+                          "src": "1187:17:11",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_type$_t_contract$_ICircuitValidator_$19016_$",
+                            "typeString": "type(contract ICircuitValidator)"
+                          }
+                        },
+                        "id": 18789,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "typeConversion",
+                        "lValueRequested": false,
+                        "nameLocations": [],
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "1187:35:11",
+                        "tryCall": false,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_ICircuitValidator_$19016",
+                          "typeString": "contract ICircuitValidator"
+                        }
+                      },
+                      {
+                        "id": 18790,
+                        "name": "ageQuery",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 18733,
+                        "src": "1224:8:11",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_CircuitQuery_$18975_memory_ptr",
+                          "typeString": "struct ICircuitValidator.CircuitQuery memory"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_uint64",
+                          "typeString": "uint64"
+                        },
+                        {
+                          "typeIdentifier": "t_contract$_ICircuitValidator_$19016",
+                          "typeString": "contract ICircuitValidator"
+                        },
+                        {
+                          "typeIdentifier": "t_struct$_CircuitQuery_$18975_memory_ptr",
+                          "typeString": "struct ICircuitValidator.CircuitQuery memory"
+                        }
+                      ],
+                      "expression": {
+                        "id": 18783,
+                        "name": "verifier",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 18724,
+                        "src": "1153:8:11",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_ERC20Verifier_$18961",
+                          "typeString": "contract ERC20Verifier"
+                        }
+                      },
+                      "id": 18785,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberLocation": "1162:13:11",
+                      "memberName": "setZKPRequest",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 19693,
+                      "src": "1153:22:11",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_external_nonpayable$_t_uint64_$_t_contract$_ICircuitValidator_$19016_$_t_struct$_CircuitQuery_$18975_memory_ptr_$returns$_t_bool_$",
+                        "typeString": "function (uint64,contract ICircuitValidator,struct ICircuitValidator.CircuitQuery memory) external returns (bool)"
+                      }
+                    },
+                    "id": 18791,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1153:80:11",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "id": 18792,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1153:80:11"
+                }
+              ]
+            },
+            "functionSelector": "c0406226",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "run",
+            "nameLocation": "704:3:11",
+            "parameters": {
+              "id": 18720,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "707:2:11"
+            },
+            "returnParameters": {
+              "id": 18721,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "717:0:11"
+            },
+            "scope": 18795,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [
+          {
+            "baseName": {
+              "id": 18695,
+              "name": "Script",
+              "nameLocations": [
+                "228:6:11"
+              ],
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 262,
+              "src": "228:6:11"
+            },
+            "id": 18696,
+            "nodeType": "InheritanceSpecifier",
+            "src": "228:6:11"
+          }
+        ],
+        "canonicalName": "zkRequestScript",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "linearizedBaseContracts": [
+          18795,
+          262
+        ],
+        "name": "zkRequestScript",
+        "nameLocation": "209:15:11",
+        "scope": 18796,
+        "usedErrors": []
+      }
+    ],
+    "license": "UNLICENSED"
+  },
+  "id": 11
+}
